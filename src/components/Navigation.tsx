@@ -14,9 +14,9 @@ export function Navigation() {
 
   return (
     <nav className="fixed top-0 w-full z-50 border-b" style={{
-      backgroundColor: 'rgba(255, 255, 255, 0.7)',
-      backdropFilter: 'blur(12px)',
-      borderBottomColor: 'rgba(0, 0, 0, 0.1)'
+      backgroundColor: 'rgba(255, 255, 255, 0.8)',
+      backdropFilter: 'blur(20px)',
+      borderBottomColor: 'var(--color-gray-200)'
     }}>
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex justify-between items-center py-4">
@@ -26,32 +26,87 @@ export function Navigation() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex gap-8">
-            <button onClick={() => scrollToSection('about')} className="text-gray-700 hover:text-blue-500 transition-colors">
+            <button
+              onClick={() => scrollToSection('about')}
+              className="transition-colors font-medium"
+              style={{
+                color: 'var(--color-gray-700)',
+              }}
+              onMouseEnter={(e) => e.currentTarget.style.color = 'var(--color-accent-500)'}
+              onMouseLeave={(e) => e.currentTarget.style.color = 'var(--color-gray-700)'}
+            >
               About
             </button>
-            <button onClick={() => scrollToSection('skills')} className="text-gray-700 hover:text-blue-500 transition-colors">
+            <button
+              onClick={() => scrollToSection('skills')}
+              className="transition-colors font-medium"
+              style={{
+                color: 'var(--color-gray-700)',
+              }}
+              onMouseEnter={(e) => e.currentTarget.style.color = 'var(--color-accent-500)'}
+              onMouseLeave={(e) => e.currentTarget.style.color = 'var(--color-gray-700)'}
+            >
               Skills
             </button>
-            <button onClick={() => scrollToSection('experience')} className="text-gray-700 hover:text-blue-500 transition-colors">
+            <button
+              onClick={() => scrollToSection('experience')}
+              className="transition-colors font-medium"
+              style={{
+                color: 'var(--color-gray-700)',
+              }}
+              onMouseEnter={(e) => e.currentTarget.style.color = 'var(--color-accent-500)'}
+              onMouseLeave={(e) => e.currentTarget.style.color = 'var(--color-gray-700)'}
+            >
               Experience
             </button>
-            <button onClick={() => scrollToSection('education')} className="text-gray-700 hover:text-blue-500 transition-colors">
+            <button
+              onClick={() => scrollToSection('education')}
+              className="transition-colors font-medium"
+              style={{
+                color: 'var(--color-gray-700)',
+              }}
+              onMouseEnter={(e) => e.currentTarget.style.color = 'var(--color-accent-500)'}
+              onMouseLeave={(e) => e.currentTarget.style.color = 'var(--color-gray-700)'}
+            >
               Education
             </button>
-            <button onClick={() => scrollToSection('projects')} className="text-gray-700 hover:text-blue-500 transition-colors">
+            <button
+              onClick={() => scrollToSection('projects')}
+              className="transition-colors font-medium"
+              style={{
+                color: 'var(--color-gray-700)',
+              }}
+              onMouseEnter={(e) => e.currentTarget.style.color = 'var(--color-accent-500)'}
+              onMouseLeave={(e) => e.currentTarget.style.color = 'var(--color-gray-700)'}
+            >
               Projects
             </button>
-            <button onClick={() => scrollToSection('contact')} className="text-gray-700 hover:text-blue-500 transition-colors">
+            <button
+              onClick={() => scrollToSection('contact')}
+              className="transition-colors font-medium"
+              style={{
+                color: 'var(--color-gray-700)',
+              }}
+              onMouseEnter={(e) => e.currentTarget.style.color = 'var(--color-accent-500)'}
+              onMouseLeave={(e) => e.currentTarget.style.color = 'var(--color-gray-700)'}
+            >
               Contact
             </button>
           </div>
 
           {/* Mobile Menu Button */}
-          <button 
-            className="md:hidden p-2 hover:bg-gray-100 rounded-xl transition-colors"
+          <button
+            className="md:hidden p-2 rounded-xl transition-all hover:scale-105"
             onClick={() => setIsOpen(!isOpen)}
+            style={{
+              backgroundColor: isOpen ? 'var(--color-gray-100)' : 'transparent',
+            }}
           >
-            {isOpen ? <X /> : <Menu />}
+            {isOpen ? (
+              <X className="w-5 h-5" style={{ color: 'var(--color-gray-700)' }} />
+            ) : (
+              <Menu className="w-5 h-5" style={{ color: 'var(--color-gray-700)' }} />
+            )}
           </button>
         </div>
 

@@ -1,47 +1,49 @@
-// Centralized Theme Configuration
+// Apple-Inspired Minimal Theme Configuration
 export const theme = {
-  // Colors
+  // Colors - Apple-like minimal palette
   colors: {
-    // Primary brand colors
+    // Primary brand colors (subtle blues)
     primary: {
-      50: '#eff6ff',
-      100: '#dbeafe',
-      200: '#bfdbfe',
-      300: '#93c5fd',
-      400: '#60a5fa',
-      500: '#3b82f6', // blue-500
-      600: '#2563eb', // blue-600
-      700: '#1d4ed8',
-      800: '#1e40af',
-      900: '#1e3a8a',
+      50: '#f8fafc',
+      100: '#f1f5f9',
+      200: '#e2e8f0',
+      300: '#cbd5e1',
+      400: '#94a3b8',
+      500: '#64748b', // slate-500 - subtle blue-gray
+      600: '#475569', // slate-600
+      700: '#334155',
+      800: '#1e293b',
+      900: '#0f172a',
     },
-    purple: {
-      500: '#a855f7',
-      600: '#9333ea',
+    // Accent color (subtle blue)
+    accent: {
+      500: '#3b82f6',
+      600: '#2563eb',
     },
-    // Neutral colors
+    // Neutral colors - Apple-like grays
     gray: {
-      50: '#f9fafb',
-      100: '#f3f4f6',
-      200: '#e5e7eb',
-      300: '#d1d5db',
-      400: '#9ca3af',
-      500: '#6b7280',
-      600: '#4b5563',
-      700: '#374151',
-      800: '#1f2937',
-      900: '#111827',
+      50: '#fafafa',  // Almost white
+      100: '#f5f5f7', // Apple gray
+      200: '#e5e5e7',
+      300: '#d1d1d6',
+      400: '#a1a1aa',
+      500: '#8e8e93',
+      600: '#636366',
+      700: '#48484a',
+      800: '#1c1c1e',
+      900: '#000000',
     },
     // Semantic colors
     white: '#ffffff',
     black: '#000000',
   },
 
-  // Gradients
+  // Gradients - Minimal, subtle gradients
   gradients: {
-    primary: 'linear-gradient(135deg, #3b82f6 0%, #a855f7 100%)',
-    hero: 'linear-gradient(to bottom, #f9fafb 0%, #ffffff 100%)',
-    button: 'linear-gradient(to right, #3b82f6 0%, #2563eb 100%)',
+    primary: 'linear-gradient(135deg, #64748b 0%, #475569 100%)',
+    hero: 'linear-gradient(to bottom, #fafafa 0%, #ffffff 100%)',
+    button: 'linear-gradient(to right, #64748b 0%, #475569 100%)',
+    subtle: 'linear-gradient(to bottom, #ffffff 0%, #fafafa 100%)',
   },
 
   // Typography

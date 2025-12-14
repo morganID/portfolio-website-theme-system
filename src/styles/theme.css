@@ -1,29 +1,32 @@
-/* Auto-generated theme CSS variables */
+/* Apple-Inspired Minimal Theme CSS Variables */
 /* This file is generated from theme.ts - do not edit directly */
 
 :root {
-  /* Colors */
-  --color-primary-50: #eff6ff;
-  --color-primary-100: #dbeafe;
-  --color-primary-500: #3b82f6;
-  --color-primary-600: #2563eb;
-  --color-purple-500: #a855f7;
-  --color-gray-50: #f9fafb;
-  --color-gray-100: #f3f4f6;
-  --color-gray-200: #e5e7eb;
-  --color-gray-400: #9ca3af;
-  --color-gray-500: #6b7280;
-  --color-gray-600: #4b5563;
-  --color-gray-700: #374151;
-  --color-gray-800: #1f2937;
-  --color-gray-900: #111827;
+  /* Colors - Apple minimal palette */
+  --color-primary-50: #f8fafc;
+  --color-primary-100: #f1f5f9;
+  --color-primary-500: #64748b;
+  --color-primary-600: #475569;
+  --color-accent-500: #3b82f6;
+  --color-accent-600: #2563eb;
+  --color-gray-50: #fafafa;
+  --color-gray-100: #f5f5f7;
+  --color-gray-200: #e5e5e7;
+  --color-gray-300: #d1d1d6;
+  --color-gray-400: #a1a1aa;
+  --color-gray-500: #8e8e93;
+  --color-gray-600: #636366;
+  --color-gray-700: #48484a;
+  --color-gray-800: #1c1c1e;
+  --color-gray-900: #000000;
   --color-white: #ffffff;
   --color-black: #000000;
 
-  /* Gradients */
-  --gradient-primary: linear-gradient(135deg, #3b82f6 0%, #a855f7 100%);
-  --gradient-hero: linear-gradient(to bottom, #f9fafb 0%, #ffffff 100%);
-  --gradient-button: linear-gradient(to right, #3b82f6 0%, #2563eb 100%);
+  /* Gradients - Minimal and subtle */
+  --gradient-primary: linear-gradient(135deg, #64748b 0%, #475569 100%);
+  --gradient-hero: linear-gradient(to bottom, #fafafa 0%, #ffffff 100%);
+  --gradient-button: linear-gradient(to right, #64748b 0%, #475569 100%);
+  --gradient-subtle: linear-gradient(to bottom, #ffffff 0%, #fafafa 100%);
 
   /* Typography */
   --font-size-xs: 0.75rem;

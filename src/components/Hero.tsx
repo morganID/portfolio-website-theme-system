@@ -13,22 +13,27 @@ export function Hero() {
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center pt-16" style={{ background: 'var(--gradient-hero)' }}>
       <div className="max-w-6xl mx-auto px-6 text-center">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: [0.6, 0.01, 0.05, 0.95] }}
-          className="inline-block px-5 py-2 bg-gray-100 rounded-full mb-8"
+          className="inline-block px-6 py-2 rounded-full mb-8"
+          style={{
+            backgroundColor: 'var(--color-gray-100)',
+            border: '1px solid var(--color-gray-200)'
+          }}
         >
-          <span className="text-gray-600">Full Stack Web Developer</span>
+          <span style={{ color: 'var(--color-gray-600)', fontWeight: '500' }}>Full Stack Web Developer</span>
         </motion.div>
         
-        <motion.h1 
+        <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: [0.6, 0.01, 0.05, 0.95] }}
-          className="text-5xl md:text-7xl text-gray-900 mb-6"
+          className="text-5xl md:text-7xl mb-6"
+          style={{ color: 'var(--color-gray-900)', fontWeight: '600' }}
         >
-          Hi, I'm <span className="bg-clip-text text-transparent" style={{ background: 'var(--gradient-primary)' }}>Malix Abdul Azis</span>
+          Hi, I'm <span style={{ color: 'var(--color-accent-500)' }}>Malix Abdul Azis</span>
         </motion.h1>
         
         <motion.p 
@@ -41,33 +46,48 @@ export function Hero() {
           Specialized in React, Node.js, and everything in between.
         </motion.p>
 
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6, ease: [0.6, 0.01, 0.05, 0.95] }}
-          className="flex justify-center gap-4 mb-12"
+          className="flex justify-center gap-6 mb-12"
         >
-          <a 
-            href="https://github.com" 
-            target="_blank" 
+          <a
+            href="https://github.com"
+            target="_blank"
             rel="noopener noreferrer"
-            className="p-3 bg-white border border-gray-200 rounded-2xl hover:bg-gray-50 transition-all shadow-sm hover:shadow-md"
+            className="p-4 rounded-2xl transition-all hover:scale-105"
+            style={{
+              backgroundColor: 'var(--color-white)',
+              border: '1px solid var(--color-gray-200)',
+              boxShadow: 'var(--shadow-sm)'
+            }}
           >
-            <Github className="w-6 h-6 text-gray-700" />
+            <Github className="w-6 h-6" style={{ color: 'var(--color-gray-700)' }} />
           </a>
-          <a 
-            href="https://linkedin.com" 
-            target="_blank" 
+          <a
+            href="https://linkedin.com"
+            target="_blank"
             rel="noopener noreferrer"
-            className="p-3 bg-white border border-gray-200 rounded-2xl hover:bg-gray-50 transition-all shadow-sm hover:shadow-md"
+            className="p-4 rounded-2xl transition-all hover:scale-105"
+            style={{
+              backgroundColor: 'var(--color-white)',
+              border: '1px solid var(--color-gray-200)',
+              boxShadow: 'var(--shadow-sm)'
+            }}
           >
-            <Linkedin className="w-6 h-6 text-blue-600" />
+            <Linkedin className="w-6 h-6" style={{ color: 'var(--color-accent-500)' }} />
           </a>
-          <a 
+          <a
             href="mailto:your.email@example.com"
-            className="p-3 bg-white border border-gray-200 rounded-2xl hover:bg-gray-50 transition-all shadow-sm hover:shadow-md"
+            className="p-4 rounded-2xl transition-all hover:scale-105"
+            style={{
+              backgroundColor: 'var(--color-white)',
+              border: '1px solid var(--color-gray-200)',
+              boxShadow: 'var(--shadow-sm)'
+            }}
           >
-            <Mail className="w-6 h-6 text-gray-700" />
+            <Mail className="w-6 h-6" style={{ color: 'var(--color-gray-700)' }} />
           </a>
         </motion.div>
 
