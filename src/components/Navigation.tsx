@@ -14,14 +14,18 @@ export function Navigation() {
 
   return (
     <nav className="fixed top-0 w-full z-50 border-b" style={{
-      backgroundColor: 'rgba(255, 255, 255, 0.8)',
-      backdropFilter: 'blur(20px)',
-      borderBottomColor: 'var(--color-gray-200)'
+      backgroundColor: 'var(--color-black)',
+      borderBottomColor: 'var(--color-primary-500)',
+      boxShadow: '0 0 10px var(--color-primary-500)'
     }}>
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex justify-between items-center py-4">
           <button onClick={() => scrollToSection('hero')}>
-            <span className="text-xl text-gray-900">&lt;MalixAzis /&gt;</span>
+            <span className="text-xl" style={{
+              color: 'var(--color-primary-500)',
+              textShadow: '0 0 10px var(--color-primary-500)'
+            }}>malix
+            </span>
           </button>
 
           {/* Desktop Navigation */}

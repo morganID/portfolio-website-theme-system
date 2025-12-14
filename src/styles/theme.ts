@@ -1,49 +1,55 @@
-// Apple-Inspired Minimal Theme Configuration
+// Dark Theme Configuration - Black Background, Green Text
 export const theme = {
-  // Colors - Apple-like minimal palette
+  // Colors - Simple black background, green text theme
   colors: {
-    // Primary brand colors (subtle blues)
+    // Primary brand colors (various shades of green)
     primary: {
-      50: '#f8fafc',
-      100: '#f1f5f9',
-      200: '#e2e8f0',
-      300: '#cbd5e1',
-      400: '#94a3b8',
-      500: '#64748b', // slate-500 - subtle blue-gray
-      600: '#475569', // slate-600
-      700: '#334155',
-      800: '#1e293b',
-      900: '#0f172a',
+      50: '#00ff00',   // Bright green
+      100: '#00e600',  // Slightly darker green
+      200: '#00cc00',  // Medium green
+      300: '#00b300',  // Darker green
+      400: '#009900',  // Dark green
+      500: '#00ff41',  // Classic hacker green
+      600: '#00e639',  // Slightly darker
+      700: '#00cc30',  // Medium dark green
+      800: '#00b327',  // Darker green
+      900: '#00991e',  // Very dark green
     },
-    // Accent color (subtle blue)
+    // Accent colors (subtle variations)
     accent: {
-      500: '#3b82f6',
-      600: '#2563eb',
+      500: '#00ff88',  // Light green
+      600: '#00cc66',  // Medium light green
     },
-    // Neutral colors - Apple-like grays
+    warning: {
+      500: '#ff4444',  // Red for warnings
+      600: '#cc3333',  // Dark red
+    },
+    // Neutral colors - Dark grays for subtle variations
     gray: {
-      50: '#fafafa',  // Almost white
-      100: '#f5f5f7', // Apple gray
-      200: '#e5e5e7',
-      300: '#d1d1d6',
-      400: '#a1a1aa',
-      500: '#8e8e93',
-      600: '#636366',
-      700: '#48484a',
-      800: '#1c1c1e',
-      900: '#000000',
+      50: '#1a1a1a',   // Very dark gray
+      100: '#2a2a2a',  // Dark gray
+      200: '#3a3a3a',  // Medium dark gray
+      300: '#4a4a4a',  // Gray
+      400: '#5a5a5a',  // Light gray
+      500: '#6a6a6a',  // Lighter gray
+      600: '#7a7a7a',  // Even lighter
+      700: '#8a8a8a',  // Light gray
+      800: '#9a9a9a',  // Near white gray
+      900: '#aaaaaa',  // Off white gray
     },
-    // Semantic colors
+    // Semantic colors - Dark theme
     white: '#ffffff',
     black: '#000000',
+    terminal: '#000000', // Pure black for terminal
   },
 
-  // Gradients - Minimal, subtle gradients
+  // Gradients - Simple dark theme gradients
   gradients: {
-    primary: 'linear-gradient(135deg, #64748b 0%, #475569 100%)',
-    hero: 'linear-gradient(to bottom, #fafafa 0%, #ffffff 100%)',
-    button: 'linear-gradient(to right, #64748b 0%, #475569 100%)',
-    subtle: 'linear-gradient(to bottom, #ffffff 0%, #fafafa 100%)',
+    primary: 'linear-gradient(135deg, #00ff00 0%, #00cc33 100%)',
+    hero: 'linear-gradient(to bottom, #000000 0%, #0a0a0a 100%)',
+    button: 'linear-gradient(to right, #00ff00 0%, #00cc33 100%)',
+    terminal: 'linear-gradient(90deg, #000000 0%, #0a0a0a 50%, #000000 100%)',
+    scanline: 'linear-gradient(to bottom, transparent 50%, rgba(0, 255, 0, 0.03) 50%)',
   },
 
   // Typography
